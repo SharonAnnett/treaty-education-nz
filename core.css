@@ -285,6 +285,35 @@ footer {
     box-shadow: var(--shadow);
 }
 
+.email a,
+.phone a {
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: inline-block;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+.email a:hover,
+.phone a:hover {
+    color: var(--maori-red);
+    text-decoration: underline;
+}
+
+.contact-sidebar .email a,
+.contact-sidebar .phone a,
+.contact-details .email a,
+.contact-details .phone a {
+    font-size: 1rem;
+}
+
+.contact-sidebar .email,
+.contact-sidebar .phone,
+.contact-details .email,
+.contact-details .phone {
+    margin: 1rem 0;
+}
+
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;

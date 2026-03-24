@@ -12,14 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     `;
 
+    // TEMPORARILY HIDDEN
+    // <li><a href="${basePath}pages/resources.html" class="nav-link">Resources</a></li>
+
     const navHTML = `
         <nav class="main-nav" aria-label="Main navigation">
             <ul>
                 <li><a href="${basePath}index.html" class="nav-link">About Treaty Education</a></li>
                 <li><a href="${basePath}pages/workshops.html" class="nav-link">Workshops</a></li>
-                <li><a href="${basePath}pages/resources.html" class="nav-link">Resources</a></li>
-                <li><a href="${basePath}pages/contact.html" class="nav-link">Contact</a></li>
                 <li><a href="${basePath}pages/testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="${basePath}pages/contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     `;
