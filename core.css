@@ -304,7 +304,9 @@ footer {
 .contact-sidebar .phone a,
 .contact-details .email a,
 .contact-details .phone a {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    word-break: break-all;
+    display: block;
 }
 
 .contact-sidebar .email,
@@ -420,5 +422,12 @@ footer {
     }
     .footer-copyright::before {
         font-size: 0.8rem;
+    }
+
+    .contact-sidebar .email a,
+    .contact-sidebar .phone a,
+    .contact-details .email a,
+    .contact-details .phone a {
+        font-size: 0.7rem;
     }
 }
