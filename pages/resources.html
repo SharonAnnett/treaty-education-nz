@@ -1,182 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treaty Education - Resources</title>
-    <link href="../core.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <script defer src="../nav-menu.js"></script>
-    <style>
-        .resources-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .resource-card {
-            background: white;
-            border-radius: 2rem;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(177, 62, 62, 0.2);
-            transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        .resource-card:hover {
-            transform: translateY(-5px);
-        }
-        .resource-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-        .resource-content {
-            padding: 1.5rem;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .resource-content h2 {
-            font-size: 1.4rem;
-            margin-top: 0;
-            margin-bottom: 0.75rem;
-            border-bottom: none;
-            color: var(--primary);
-        }
-        .resource-content p {
-            margin-bottom: 0.75rem;
-            color: var(--text-soft);
-        }
-        .resource-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
-            padding-top: 1rem;
-        }
-        .price {
-            font-weight: 700;
-            color: var(--maori-red);
-            font-size: 1.3rem;
-            margin: 0;
-        }
-        .purchase-btn {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--maori-red), var(--primary));
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 40px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 0;
-            flex-shrink: 0;
-        }
-        .purchase-btn:hover {
-            transform: scale(1.05);
-            background: linear-gradient(135deg, #c04545, #2c5f2d);
-            color: white;
-        }
-    </style>
-</head>
-<body>
-<header class="header"></header>
+---
+layout: default
+title: Resources
+---
 
-<main>
-    <h1>Resources for Purchase</h1>
-    <p>Here you can purchase educational resources, including private videos and other materials. Click the button to
-        proceed to PayPal invoice.</p>
+<!--
+  Treaty Education - Website / Repository
+  Developer: Jericho Crosby (built for Sharon Annett)
+  Copyright (c) 2026 Sharon Annett (Treaty Education). All rights reserved.
+  This repository and its contents are proprietary to Sharon Annett (Treaty Education).
+  Use, copying, modification, distribution, or derivation without permission is strictly prohibited.
+-->
 
-    <div class="resources-grid">
+<h1>Resources for Purchase</h1>
+<p>Here you can purchase educational resources, including private videos and other materials. Click the button to
+    proceed to PayPal invoice.</p>
 
-        <div class="resource-card">
-            <img src="../images/temp-screenshot.png" alt="Image not available" class="resource-img">
-            <div class="resource-content">
-                <h2>RESOURCE_TITLE_HERE</h2>
-                <p>Replace_this_with_a_summary_of_the_resource</p>
-                <div class="resource-footer">
-                    <span class="price">$25.00 NZD</span>
-                    <a href="#" class="purchase-btn">Purchase via PayPal</a>
-                </div>
+<div class="resources-grid">
+
+    <div class="resource-card">
+        <img alt="Image not available" class="resource-img" src="{{ site.baseurl }}/assets/images/temp-screenshot.png">
+        <div class="resource-content">
+            <h2>RESOURCE_TITLE_HERE</h2>
+            <p>Replace_this_with_a_summary_of_the_resource</p>
+            <div class="resource-footer">
+                <span class="price">$25.00 NZD</span>
+                <a class="purchase-btn" href="#">Purchase via PayPal</a>
             </div>
         </div>
-
-        <div class="resource-card">
-            <img src="../images/temp-screenshot.png" alt="Image not available" class="resource-img">
-            <div class="resource-content">
-                <h2>RESOURCE_TITLE_HERE</h2>
-                <p>Replace_this_with_a_summary_of_the_resource</p>
-                <div class="resource-footer">
-                    <span class="price">$10.00 NZD</span>
-                    <a href="#" class="purchase-btn">Purchase via PayPal</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="resource-card">
-            <img src="../images/temp-screenshot.png" alt="Image not available" class="resource-img">
-            <div class="resource-content">
-                <h2>RESOURCE_TITLE_HERE</h2>
-                <p>Replace_this_with_a_summary_of_the_resource</p>
-                <div class="resource-footer">
-                    <span class="price">$15.00 NZD</span>
-                    <a href="#" class="purchase-btn">Purchase via PayPal</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="resource-card">
-            <img src="../images/temp-screenshot.png" alt="Image not available" class="resource-img">
-            <div class="resource-content">
-                <h2>RESOURCE_TITLE_HERE</h2>
-                <p>Replace_this_with_a_summary_of_the_resource</p>
-                <div class="resource-footer">
-                    <span class="price">$12.00 NZD</span>
-                    <a href="#" class="purchase-btn">Purchase via PayPal</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="resource-card">
-            <img src="../images/temp-screenshot.png" alt="Image not available" class="resource-img">
-            <div class="resource-content">
-                <h2>RESOURCE_TITLE_HERE</h2>
-                <p>Replace_this_with_a_summary_of_the_resource</p>
-                <div class="resource-footer">
-                    <span class="price">$8.00 NZD</span>
-                    <a href="#" class="purchase-btn">Purchase via PayPal</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="resource-card">
-            <img src="../images/temp-screenshot.png" alt="Image not available" class="resource-img">
-            <div class="resource-content">
-                <h2>RESOURCE_TITLE_HERE</h2>
-                <p>Replace_this_with_a_summary_of_the_resource</p>
-                <div class="resource-footer">
-                    <span class="price">$20.00 NZD</span>
-                    <a href="#" class="purchase-btn">Purchase via PayPal</a>
-                </div>
-            </div>
-        </div>
-
-        <!----------------------------------->
-        <!-- ADD ADDITIONAL RESOURCES HERE -->
-        <!----------------------------------->
-
     </div>
 
-    <p style="margin-top: 2rem;">More resources coming soon. Please check back later.</p>
-</main>
+    <div class="resource-card">
+        <img alt="Image not available" class="resource-img" src="{{ site.baseurl }}/assets/images/temp-screenshot.png">
+        <div class="resource-content">
+            <h2>RESOURCE_TITLE_HERE</h2>
+            <p>Replace_this_with_a_summary_of_the_resource</p>
+            <div class="resource-footer">
+                <span class="price">$10.00 NZD</span>
+                <a class="purchase-btn" href="#">Purchase via PayPal</a>
+            </div>
+        </div>
+    </div>
 
-</body>
-</html>
+    <div class="resource-card">
+        <img alt="Image not available" class="resource-img" src="{{ site.baseurl }}/assets/images/temp-screenshot.png">
+        <div class="resource-content">
+            <h2>RESOURCE_TITLE_HERE</h2>
+            <p>Replace_this_with_a_summary_of_the_resource</p>
+            <div class="resource-footer">
+                <span class="price">$15.00 NZD</span>
+                <a class="purchase-btn" href="#">Purchase via PayPal</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="resource-card">
+        <img alt="Image not available" class="resource-img" src="{{ site.baseurl }}/assets/images/temp-screenshot.png">
+        <div class="resource-content">
+            <h2>RESOURCE_TITLE_HERE</h2>
+            <p>Replace_this_with_a_summary_of_the_resource</p>
+            <div class="resource-footer">
+                <span class="price">$12.00 NZD</span>
+                <a class="purchase-btn" href="#">Purchase via PayPal</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="resource-card">
+        <img alt="Image not available" class="resource-img" src="{{ site.baseurl }}/assets/images/temp-screenshot.png">
+        <div class="resource-content">
+            <h2>RESOURCE_TITLE_HERE</h2>
+            <p>Replace_this_with_a_summary_of_the_resource</p>
+            <div class="resource-footer">
+                <span class="price">$8.00 NZD</span>
+                <a class="purchase-btn" href="#">Purchase via PayPal</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="resource-card">
+        <img alt="Image not available" class="resource-img" src="{{ site.baseurl }}/assets/images/temp-screenshot.png">
+        <div class="resource-content">
+            <h2>RESOURCE_TITLE_HERE</h2>
+            <p>Replace_this_with_a_summary_of_the_resource</p>
+            <div class="resource-footer">
+                <span class="price">$20.00 NZD</span>
+                <a class="purchase-btn" href="#">Purchase via PayPal</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<p style="margin-top: 2rem;">More resources coming soon. Please check back later.</p>
+
+<style>
+    .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .resource-card {
+        background: white;
+        border-radius: 2rem;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(177, 62, 62, 0.2);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .resource-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .resource-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .resource-content {
+        padding: 1.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resource-content h2 {
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        border-bottom: none;
+        color: var(--primary);
+    }
+
+    .resource-content p {
+        margin-bottom: 0.75rem;
+        color: var(--text-soft);
+    }
+
+    .resource-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 1rem;
+    }
+
+    .price {
+        font-weight: 700;
+        color: var(--maori-red);
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .purchase-btn {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--maori-red), var(--primary));
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 40px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: var(--transition);
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .purchase-btn:hover {
+        transform: scale(1.05);
+        background: linear-gradient(135deg, #c04545, #2c5f2d);
+        color: white;
+    }
+</style>

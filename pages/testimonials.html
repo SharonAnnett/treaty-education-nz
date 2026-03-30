@@ -1,263 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Treaty Education - Testimonials</title>
-    <link href="../core.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <script defer src="../nav-menu.js"></script>
-    <style>
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .testimonial-item {
-            background: white;
-            border-radius: 1.5rem;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(177, 62, 62, 0.1);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
-        }
-        .testimonial-quote {
-            position: relative;
-            padding: 1.5rem 2.5rem;
-            background: transparent;
-            color: var(--text-dark);
-            line-height: 1.5;
-            flex: 1;
-        }
-        .testimonial-quote::before {
-            content: "“";
-            font-family: Georgia, 'Times New Roman', serif;
-            font-size: 3rem;
-            position: absolute;
-            left: 0.2rem;
-            top: -0.5rem;
-            color: var(--maori-red);
-            opacity: 0.3;
-            pointer-events: none;
-        }
-        .testimonial-quote::after {
-            content: "”";
-            font-family: Georgia, 'Times New Roman', serif;
-            font-size: 3rem;
-            position: absolute;
-            right: 0.2rem;
-            bottom: -0.8rem;
-            color: var(--maori-red);
-            opacity: 0.3;
-            pointer-events: none;
-        }
-        .testimonial-author {
-            text-align: left;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--primary);
-            padding: 0 1.5rem 1.5rem 1.5rem;
-            margin-top: 0;
-            letter-spacing: normal;
-            opacity: 1;
-        }
-    </style>
-</head>
-<body>
-<header class="header"></header>
+---
+layout: default
+title: Testimonials
+---
 
-<main>
-    <h1>Testimonials</h1>
-    <div class="testimonials-grid">
-        <div class="testimonial-item">
-            <div class="testimonial-author">Ara Institute of Canterbury 2025</div>
-            <div class="testimonial-quote">The facilitator had an amazing wealth of knowledge, great at communicating
-                key points and developing the conversations. Great research and publications were introduced. When you
-                know the what and the why, it’s easier to apply the how.
-            </div>
-        </div>
+<!--
+  Treaty Education - Website / Repository
+  Developer: Jericho Crosby (built for Sharon Annett)
+  Copyright (c) 2026 Sharon Annett (Treaty Education). All rights reserved.
+  This repository and its contents are proprietary to Sharon Annett (Treaty Education).
+  Use, copying, modification, distribution, or derivation without permission is strictly prohibited.
+-->
 
-        <div class="testimonial-item">
-            <div class="testimonial-author">Manaaki Whenua 2024</div>
-            <div class="testimonial-quote">The highlights of this workshop were the safe space for discussion, very
-                engaging and easy to follow even though the topics were confronting. Also being led by a non-Māori
-                facilitator was a huge strength as it helped break down barriers (guilt etc) and show how non-Māori can
-                become Tangata Tiriti.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">University of Canterbury, School of Psychology, 2024</div>
-            <div class="testimonial-quote">I found the workshop extremely engaging. All training I have had on cultural
-                competence so far has been focusing on what and how to develop skills to work with Māori more
-                effectively. This workshop tells me why developing such skills are crucial and what role we as New
-                Zealanders play in restoring balance and health in the relationship between Pākehā and Māori. The
-                reflective practices and discussions were a great way to brainstorm some potential solutions for
-                addressing this.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Christchurch City Council, 2023</div>
-            <div class="testimonial-quote">I wanted to contact you just to say how rewarding I found this course and
-                that it has given me so much to think about personally and professionally. I thought I had a good
-                knowledge of NZ history but there was so much I didn’t know. On a practical level, points that were
-                covered were able to help a colleague and I frame a new way forward in a matter where we were facing
-                roadblocks.<br><br>I was so struck by the sheer strength of character and force of will that enabled
-                mana whenua to fight for so long for redress, and how exhausting that must have been and will still be
-                for so many. I am encouraged that teaching the full history of Aotearoa/New Zealand will now be
-                compulsory in our schools.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Community Environment Groups, 2023</div>
-            <div class="testimonial-quote">This is the best workshop I have ever been on. Sharon provided a safe space
-                to allow all attendees to learn, question and discuss, and clarify the importance and place of Te Tiriti
-                in the framework of Aotearoa/NZ.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">University of Otago College of Education, 2022</div>
-            <div class="testimonial-quote">Thank you so much for your workshop facilitation last week - beautifully
-                structured, articulate, fastidious, respectful …. And so clearly reasoned. It has been the best PD I
-                have experienced. And I’m getting on a bit now!
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">New Zealand Broadcasting School, 2022</div>
-            <div class="testimonial-quote">I just wanted to mihi to you for your time, expertise and energy over the
-                past two days. I knew your course was quality, but to hear the feedback from students has been
-                wonderful. For some, it’s really been transformational in their personal journeys with Kaupapa Māori.
-                That’s what it’s all about!
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Environment Canterbury, 2020</div>
-            <div class="testimonial-quote">I found your two day course transformational. I feel like a better person for
-                it. More prepared to have conversations about how we move forward and more grounded in my place as a New
-                Zealander.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Social Workers, series of workshops, 2020</div>
-            <div class="testimonial-quote">I think if we could bring how we feel at the end of days like this to our
-                practice everyday, the health of all our patients would be a lot better.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Social Workers, series of workshops, 2020</div>
-            <div class="testimonial-quote">This has been by far the very best bi-cultural training/education opportunity
-                I have had throughout my 20+ year social work career.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Kaumātua, Bio-Protection Research Centre, Lincoln University, 2020</div>
-            <div class="testimonial-quote">These Tiriti workshops are a powerful medium to build relationships in a safe
-                environment that does not judge but supports the growth of knowledge. The workshop which Sharon delivers
-                gives a balanced perspective on the Tiriti in a non confrontational way and yet the underlying message
-                is very clear which challenges us to think about the young history of our country of where we have come
-                from to “where to” for the future. My involvement with the program provides another dimension of a lived
-                perspective that gives a true account of the treaty partnership from both sides.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Dietitian’s workshop, 2019</div>
-            <div class="testimonial-quote">You have inspired me to think deeper about my culture, my bias, why things
-                are how they are/norms within my practice and organisation … I will push for equity and embrace culture
-                within my work.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Midwifery workshop, 2018</div>
-            <div class="testimonial-quote">A brilliant workshop that makes the Treaty alive and relevant to midwifery. I
-                will take away resources to use in conversations about honouring Te Tiriti in institutional settings and
-                documents and policy writing.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Year 7/8 student reflections, Treaty workshop 2018</div>
-            <div class="testimonial-quote">I enjoyed learning about the treaty, because I now realise things that
-                happened and how we are fixing them.<br><br>I liked learning about the treaty (texts) and how they were
-                so different, it was really interesting to see the differences.<br><br>I think our history is so cool to
-                learn about and it’s very interesting and everyone of us should learn about it.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Environment Canterbury, 2017</div>
-            <div class="testimonial-quote">Thank-you for running such an interesting, informative and supportive
-                workshop. I’ve been to a number of Treaty workshops which only served to increase my misunderstanding
-                and frustration with the treaty. I wish this had been the first workshop I had been to, as I will leave
-                this workshop with empathy, understanding and passion to embrace Māori culture and values. I believe
-                this will have a huge impact on who I am and how I see, interact and support Māori values and history in
-                my role at ECAN and beyond.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Selwyn Community Workshop, 2017</div>
-            <div class="testimonial-quote">Watching and listening to you deliver your mahi has given me hope, that we as
-                a nation can find a way to move forward together … it has given me a chance to grow and especially
-                reflect on my own life and future decisions for my whānau.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Christchurch City Council, 2016</div>
-            <div class="testimonial-quote">I liked the varied, interactive approach …this workshop has inspired me to
-                embrace the treaty as a partner rather than just an observer.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Selwyn District Council, 2016</div>
-            <div class="testimonial-quote">I felt safe to ask questions, guilt free and I’m excited about the future for
-                New Zealand.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">Teachers’ workshop, 2016</div>
-            <div class="testimonial-quote">Loved the connection made with current issues, right at the start, to
-                demonstrate that this issue is alive and kicking in our contemporary world, and why.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">CCC Workshop, 2016</div>
-            <div class="testimonial-quote">The whole workshop was stimulating and full of information. I’ve done several
-                workshops over my working life, as well as studying NZ history at university and still learned more. I
-                especially appreciated the Ngāi Tahu perspective and how things happened here in Te Wai Pounamu and why
-                and how they were different from what was happening up North.
-            </div>
-        </div>
-
-        <div class="testimonial-item">
-            <div class="testimonial-author">CCC, 2016</div>
-            <div class="testimonial-quote">Thought facilitator was brilliant, made reason in an area full of anger,
-                misunderstanding and suspicion.
-            </div>
+<h1>Testimonials</h1>
+<div class="testimonials-grid">
+    <div class="testimonial-item">
+        <div class="testimonial-author">Ara Institute of Canterbury 2025</div>
+        <div class="testimonial-quote">The facilitator had an amazing wealth of knowledge, great at communicating key
+            points and developing the conversations. Great research and publications were introduced. When you know the
+            what and the why, it’s easier to apply the how.
         </div>
     </div>
-</main>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Manaaki Whenua 2024</div>
+        <div class="testimonial-quote">The highlights of this workshop were the safe space for discussion, very engaging
+            and easy to follow even though the topics were confronting. Also being led by a non-Māori facilitator was a
+            huge strength as it helped break down barriers (guilt etc) and show how non-Māori can become Tangata Tiriti.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">University of Canterbury, School of Psychology, 2024</div>
+        <div class="testimonial-quote">I found the workshop extremely engaging. All training I have had on cultural
+            competence so far has been focusing on what and how to develop skills to work with Māori more effectively.
+            This workshop tells me why developing such skills are crucial and what role we as New Zealanders play in
+            restoring balance and health in the relationship between Pākehā and Māori. The reflective practices and
+            discussions were a great way to brainstorm some potential solutions for addressing this.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Christchurch City Council, 2023</div>
+        <div class="testimonial-quote">I wanted to contact you just to say how rewarding I found this course and that it
+            has given me so much to think about personally and professionally. I thought I had a good knowledge of NZ
+            history but there was so much I didn’t know. On a practical level, points that were covered were able to
+            help a colleague and I frame a new way forward in a matter where we were facing roadblocks.<br><br>I was so
+            struck by the sheer strength of character and force of will that enabled mana whenua to fight for so long
+            for redress, and how exhausting that must have been and will still be for so many. I am encouraged that
+            teaching the full history of Aotearoa/New Zealand will now be compulsory in our schools.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Community Environment Groups, 2023</div>
+        <div class="testimonial-quote">This is the best workshop I have ever been on. Sharon provided a safe space to
+            allow all attendees to learn, question and discuss, and clarify the importance and place of Te Tiriti in the
+            framework of Aotearoa/NZ.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">University of Otago College of Education, 2022</div>
+        <div class="testimonial-quote">Thank you so much for your workshop facilitation last week - beautifully
+            structured, articulate, fastidious, respectful …. And so clearly reasoned. It has been the best PD I have
+            experienced. And I’m getting on a bit now!
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">New Zealand Broadcasting School, 2022</div>
+        <div class="testimonial-quote">I just wanted to mihi to you for your time, expertise and energy over the past
+            two days. I knew your course was quality, but to hear the feedback from students has been wonderful. For
+            some, it’s really been transformational in their personal journeys with Kaupapa Māori. That’s what it’s all
+            about!
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Environment Canterbury, 2020</div>
+        <div class="testimonial-quote">I found your two day course transformational. I feel like a better person for it.
+            More prepared to have conversations about how we move forward and more grounded in my place as a New
+            Zealander.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Social Workers, series of workshops, 2020</div>
+        <div class="testimonial-quote">I think if we could bring how we feel at the end of days like this to our
+            practice everyday, the health of all our patients would be a lot better.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Social Workers, series of workshops, 2020</div>
+        <div class="testimonial-quote">This has been by far the very best bi-cultural training/education opportunity I
+            have had throughout my 20+ year social work career.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Kaumātua, Bio-Protection Research Centre, Lincoln University, 2020</div>
+        <div class="testimonial-quote">These Tiriti workshops are a powerful medium to build relationships in a safe
+            environment that does not judge but supports the growth of knowledge. The workshop which Sharon delivers
+            gives a balanced perspective on the Tiriti in a non confrontational way and yet the underlying message is
+            very clear which challenges us to think about the young history of our country of where we have come from to
+            “where to” for the future. My involvement with the program provides another dimension of a lived perspective
+            that gives a true account of the treaty partnership from both sides.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Dietitian’s workshop, 2019</div>
+        <div class="testimonial-quote">You have inspired me to think deeper about my culture, my bias, why things are
+            how they are/norms within my practice and organisation … I will push for equity and embrace culture within
+            my work.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Midwifery workshop, 2018</div>
+        <div class="testimonial-quote">A brilliant workshop that makes the Treaty alive and relevant to midwifery. I
+            will take away resources to use in conversations about honouring Te Tiriti in institutional settings and
+            documents and policy writing.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Year 7/8 student reflections, Treaty workshop 2018</div>
+        <div class="testimonial-quote">I enjoyed learning about the treaty, because I now realise things that happened
+            and how we are fixing them.<br><br>I liked learning about the treaty (texts) and how they were so different,
+            it was really interesting to see the differences.<br><br>I think our history is so cool to learn about and
+            it’s very interesting and everyone of us should learn about it.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Environment Canterbury, 2017</div>
+        <div class="testimonial-quote">Thank-you for running such an interesting, informative and supportive workshop.
+            I’ve been to a number of Treaty workshops which only served to increase my misunderstanding and frustration
+            with the treaty. I wish this had been the first workshop I had been to, as I will leave this workshop with
+            empathy, understanding and passion to embrace Māori culture and values. I believe this will have a huge
+            impact on who I am and how I see, interact and support Māori values and history in my role at ECAN and
+            beyond.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Selwyn Community Workshop, 2017</div>
+        <div class="testimonial-quote">Watching and listening to you deliver your mahi has given me hope, that we as a
+            nation can find a way to move forward together … it has given me a chance to grow and especially reflect on
+            my own life and future decisions for my whānau.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Christchurch City Council, 2016</div>
+        <div class="testimonial-quote">I liked the varied, interactive approach …this workshop has inspired me to
+            embrace the treaty as a partner rather than just an observer.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Selwyn District Council, 2016</div>
+        <div class="testimonial-quote">I felt safe to ask questions, guilt free and I’m excited about the future for New
+            Zealand.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">Teachers’ workshop, 2016</div>
+        <div class="testimonial-quote">Loved the connection made with current issues, right at the start, to demonstrate
+            that this issue is alive and kicking in our contemporary world, and why.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">CCC Workshop, 2016</div>
+        <div class="testimonial-quote">The whole workshop was stimulating and full of information. I’ve done several
+            workshops over my working life, as well as studying NZ history at university and still learned more. I
+            especially appreciated the Ngāi Tahu perspective and how things happened here in Te Wai Pounamu and why and
+            how they were different from what was happening up North.
+        </div>
+    </div>
+    <div class="testimonial-item">
+        <div class="testimonial-author">CCC, 2016</div>
+        <div class="testimonial-quote">Thought facilitator was brilliant, made reason in an area full of anger,
+            misunderstanding and suspicion.
+        </div>
+    </div>
+</div>
 
-</body>
-</html>
+<style>
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .testimonial-item {
+        background: white;
+        border-radius: 1.5rem;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(177, 62, 62, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .testimonial-quote {
+        position: relative;
+        padding: 1.5rem 2.5rem;
+        background: transparent;
+        color: var(--text-dark);
+        line-height: 1.5;
+        flex: 1;
+    }
+
+    .testimonial-quote::before {
+        content: "“";
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 3rem;
+        position: absolute;
+        left: 0.2rem;
+        top: -0.5rem;
+        color: var(--maori-red);
+        opacity: 0.3;
+        pointer-events: none;
+    }
+
+    .testimonial-quote::after {
+        content: "”";
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 3rem;
+        position: absolute;
+        right: 0.2rem;
+        bottom: -0.8rem;
+        color: var(--maori-red);
+        opacity: 0.3;
+        pointer-events: none;
+    }
+
+    .testimonial-author {
+        text-align: left;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--primary);
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        margin-top: 0;
+        letter-spacing: normal;
+        opacity: 1;
+    }
+</style>

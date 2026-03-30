@@ -1,82 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Treaty Education - Home</title>
-    <link href="core.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <script defer src="nav-menu.js"></script>
-    <style>
-        .home-grid {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 2.8rem;
-            align-items: start;
-        }
-        .contact-sidebar {
-            background: #e8e3d3;
-            border-radius: 40px;
-            padding: 2rem 1.8rem;
-            border: 2px solid var(--maori-red);
-            text-align: center;
-            background-image: repeating-linear-gradient(45deg, rgba(177, 62, 62, 0.05) 0px, rgba(177, 62, 62, 0.05) 8px, transparent 8px, transparent 16px);
-        }
-        .banner-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            box-shadow: var(--shadow);
-        }
-    </style>
-</head>
-<body>
-<header class="header"></header>
+---
+layout: default
+title: Home
+---
 
-<main>
-    <div class="home-grid">
-        <div class="home-content">
-            <p style="font-size:1.3rem; font-weight:500; color: var(--primary);">Tēnā koutou katoa.</p>
-            <p><em>Nei rā te mihi ki ngā tāngata whenua o tēnei rohe; mai i Ngā Tiritiri o te Moana, whakawhiti i Ngā
-                Pākihi Whakatekateka o Waitaha, tae noa ki Te Pātaka o Rākaihautū, arā ko Waitaha, ko Ngāti Māmoe, ko
-                Ngāi Tahu whānui, tēnā koutou.</em></p>
-            <p><em>Acknowledgements to the first people of this region, from the Southern Alps, traversing the
-                Canterbury Plains to Banks Peninsula, greetings to the people of Ngāi Tahu.</em></p>
+<!--
+  Treaty Education - Website / Repository
+  Developer: Jericho Crosby (built for Sharon Annett)
+  Copyright (c) 2026 Sharon Annett (Treaty Education). All rights reserved.
+  This repository and its contents are proprietary to Sharon Annett (Treaty Education).
+  Use, copying, modification, distribution, or derivation without permission is strictly prohibited.
+-->
 
-            <hr style="border: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--maori-red), var(--primary), transparent); margin: 2rem 0;">
+<div class="home-grid">
+    <div class="home-content">
+        <p style="font-size:1.3rem; font-weight:500; color: var(--primary);">Tēnā koutou katoa.</p>
+        <p><em>Nei rā te mihi ki ngā tāngata whenua o tēnei rohe; mai i Ngā Tiritiri o te Moana, whakawhiti i Ngā Pākihi
+            Whakatekateka o Waitaha, tae noa ki Te Pātaka o Rākaihautū, arā ko Waitaha, ko Ngāti Māmoe, ko Ngāi Tahu
+            whānui, tēnā koutou.</em></p>
+        <p><em>Acknowledgements to the first people of this region, from the Southern Alps, traversing the Canterbury
+            Plains to Banks Peninsula, greetings to the people of Ngāi Tahu.</em></p>
 
-            <p><strong>Welcome to Treaty Education, run by Sharon Annett.</strong> Treaty education is about helping
-                people to understand why the Treaty is relevant and important today, personally, in our places of work,
-                our communities and as a country. This is addressed through a workshop process, which starts with
-                honouring relationships and moves through to considering what we can do to give life to the Treaty
-                today.</p>
+        <hr style="border: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--maori-red), var(--primary), transparent); margin: 2rem 0;">
 
-            <p>Sharon Annett is the key facilitator of Treaty Education. Sharon is Pākehā, born and raised in
-                Ōtautahi/Christchurch. Her ancestors arrived in Canterbury in the 1860s from Armagh, Ireland and
-                Scotland, and in the 1960s from England.</p>
+        <p><strong>Welcome to Treaty Education, run by Sharon Annett.</strong> Treaty education is about helping people
+            to understand why the Treaty is relevant and important today, personally, in our places of work, our
+            communities and as a country. This is addressed through a workshop process, which starts with honouring
+            relationships and moves through to considering what we can do to give life to the Treaty today.</p>
 
-            <p>She has over twenty years teaching experience in a broad range of settings; from early childhood through
-                to adults, mainstream, bi-lingual, total immersion, rural and urban. She also has a life long passion
-                for te reo Māori.</p>
+        <p>Sharon Annett is the key facilitator of Treaty Education. Sharon is Pākehā, born and raised in
+            Ōtautahi/Christchurch. Her ancestors arrived in Canterbury in the 1860s from Armagh, Ireland and Scotland,
+            and in the 1960s from England.</p>
 
-            <p>Sharon weaves together her diverse experiences, skills and knowledge to facilitate learning and change
-                for people from a broad range of groups and organisations. She has had the generous support of many
-                people in this work, including the late Robert Consedine, a well-respected and passionate treaty
-                educator.</p>
+        <p>She has over twenty years teaching experience in a broad range of settings; from early childhood through to
+            adults, mainstream, bi-lingual, total immersion, rural and urban. She also has a life long passion for te
+            reo Māori.</p>
 
-            <p>Honouring relationships is at the heart of Sharon’s work and she is guided by the whakataukī;<em>“Ko te
-                houhanga rongo te kupu. The message is reconciliation.”</em>
-            </p>
-        </div>
+        <p>Sharon weaves together her diverse experiences, skills and knowledge to facilitate learning and change for
+            people from a broad range of groups and organisations. She has had the generous support of many people in
+            this work, including the late Robert Consedine, a well-respected and passionate treaty educator.</p>
 
-        <aside class="contact-sidebar">
-            <img alt="Sharon Annett" class="avatar" src="images/avatar.png">
-            <p class="email"><a href="mailto:treaty.education@protonmail.com">✉️ treaty.education@protonmail.com</a></p>
-            <p class="phone"><a href="tel:+64210475403">📞 021 047 5403</a></p>
-            <img src="images/small-banner.png" alt="Small banner" class="small-banner">
-        </aside>
+        <p>Honouring relationships is at the heart of Sharon’s work and she is guided by the whakataukī;<em>“Ko te
+            houhanga rongo te kupu. The message is reconciliation.”</em></p>
     </div>
-</main>
-</body>
-</html>
+
+    <aside class="contact-sidebar">
+        <img alt="Sharon Annett" class="avatar" src="{{ site.baseurl }}/assets/images/avatar.png">
+        <p class="email"><a href="mailto:treaty.education@protonmail.com">✉️ treaty.education@protonmail.com</a></p>
+        <p class="phone"><a href="tel:+64210475403">📞 021 047 5403</a></p>
+        <img alt="Small banner" class="small-banner" src="{{ site.baseurl }}/assets/images/small-banner.png">
+    </aside>
+</div>
+
+<style>
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 2.8rem;
+        align-items: start;
+    }
+
+    .contact-sidebar {
+        background: #e8e3d3;
+        border-radius: 40px;
+        padding: 2rem 1.8rem;
+        border: 2px solid var(--maori-red);
+        text-align: center;
+        background-image: repeating-linear-gradient(45deg, rgba(177, 62, 62, 0.05) 0px, rgba(177, 62, 62, 0.05) 8px, transparent 8px, transparent 16px);
+    }
+
+    .banner-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        box-shadow: var(--shadow);
+    }
+</style>

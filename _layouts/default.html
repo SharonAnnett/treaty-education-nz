@@ -1,0 +1,22 @@
+<!--
+  Treaty Education - Website / Repository
+  Developer: Jericho Crosby (built for Sharon Annett)
+  Copyright (c) 2026 Sharon Annett (Treaty Education). All rights reserved.
+  This repository and its contents are proprietary to Sharon Annett (Treaty Education).
+  Use, copying, modification, distribution, or derivation without permission is strictly prohibited.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+<header class="header">
+    {% include header.html %}
+</header>
+<main>
+    {{ content }}
+</main>
+{% include footer.html %}
+<script defer src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,39 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Treaty Education - Contact</title>
-    <link href="../core.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <script defer src="../nav-menu.js"></script>
-    <style>
-        .contact-details {
-            background: #e8e3d3;
-            border-radius: 40px;
-            padding: 2.5rem;
-            max-width: 600px;
-            margin: 2rem auto;
-            text-align: center;
-            border: 2px solid var(--maori-red);
-            background-image: repeating-linear-gradient(135deg, rgba(177, 62, 62, 0.05) 0px, rgba(177, 62, 62, 0.05) 8px, transparent 8px, transparent 16px);
-        }
-    </style>
-</head>
-<body>
-<header class="header"></header>
+---
+layout: default
+title: Contact
+---
 
-<main>
-    <h1>Contact Sharon Annett</h1>
-    <div class="contact-details">
-        <img src="../images/avatar.png" alt="Sharon Annett" class="avatar avatar-large">
-        <p class="email"><a href="mailto:treaty.education@protonmail.com">✉️ treaty.education@protonmail.com</a></p>
-        <p class="phone"><a href="tel:+64210475403">📞 021 047 5403</a></p>
-        <p class="note">Feel free to email for workshop enquiries, public workshop dates, or any questions.</p>
-        <img src="../images/small-banner.png" alt="Small banner" class="small-banner">
-    </div>
-</main>
+<!--
+  Treaty Education - Website / Repository
+  Developer: Jericho Crosby (built for Sharon Annett)
+  Copyright (c) 2026 Sharon Annett (Treaty Education). All rights reserved.
+  This repository and its contents are proprietary to Sharon Annett (Treaty Education).
+  Use, copying, modification, distribution, or derivation without permission is strictly prohibited.
+-->
 
-</body>
-</html>
+<h1>Contact Sharon Annett</h1>
+<div class="contact-details">
+    <img alt="Sharon Annett" class="avatar avatar-large" src="{{ site.baseurl }}/assets/images/avatar.png">
+    <p class="email"><a href="mailto:treaty.education@protonmail.com">✉️ treaty.education@protonmail.com</a></p>
+    <p class="phone"><a href="tel:+64210475403">📞 021 047 5403</a></p>
+    <p class="note">Feel free to email for workshop enquiries, public workshop dates, or any questions.</p>
+    <img alt="Small banner" class="small-banner" src="{{ site.baseurl }}/assets/images/small-banner.png">
+</div>
+
+<style>
+    .contact-details {
+        background: repeating-linear-gradient(135deg, rgba(177, 62, 62, 0.05) 0px, rgba(177, 62, 62, 0.05) 8px, transparent 8px, transparent 16px), #e8e3d3;
+        border-radius: 40px;
+        padding: 2.5rem;
+        max-width: 600px;
+        margin: 2rem auto;
+        text-align: center;
+        border: 2px solid var(--maori-red);
+    }
+
+    .avatar-large {
+        width: 180px;
+        height: 180px;
+        border-radius: 0;
+        object-fit: cover;
+        margin: 0 auto 1.2rem;
+        border: none;
+        box-shadow: var(--shadow);
+    }
+
+    .email a, .phone a {
+        font-weight: 700;
+        font-size: 1.2rem;
+        display: inline-block;
+        word-break: break-word;
+        max-width: 100%;
+    }
+
+    .email a:hover, .phone a:hover {
+        color: var(--maori-red);
+        text-decoration: underline;
+    }
+</style>

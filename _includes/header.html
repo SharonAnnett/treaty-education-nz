@@ -1,0 +1,37 @@
+<!--
+  Treaty Education - Website / Repository
+  Developer: Jericho Crosby (built for Sharon Annett)
+  Copyright (c) 2026 Sharon Annett (Treaty Education). All rights reserved.
+  This repository and its contents are proprietary to Sharon Annett (Treaty Education).
+  Use, copying, modification, distribution, or derivation without permission is strictly prohibited.
+-->
+
+<div class="container">
+    <div class="header-top">
+        <img alt="Treaty Education logo" class="header-logo" src="{{ site.baseurl }}/assets/images/round-logo.png">
+        <h1>TREATY EDUCATION</h1>
+    </div>
+    <div class="nav-toggle">
+        <button aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+    </div>
+    <nav aria-label="Main navigation" class="main-nav">
+        <ul>
+            <li><a class="nav-link {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}"
+                   href="{{ site.baseurl }}/index.html">About Treaty
+                Education</a></li>
+            <li><a class="nav-link {% if page.url == '/pages/workshops.html' %}active{% endif %}"
+                   href="{{ site.baseurl }}/pages/workshops.html">Workshops</a></li>
+            <li><a class="nav-link {% if page.url == '/pages/testimonials.html' %}active{% endif %}"
+                   href="{{ site.baseurl }}/pages/testimonials.html">Testimonials</a>
+            </li>
+            <li><a class="nav-link {% if page.url == '/pages/contact.html' %}active{% endif %}"
+                   href="{{ site.baseurl }}/pages/contact.html">Contact</a></li>
+            <!-- <li><a href="{{ site.baseurl }}/pages/resources.html" class="nav-link">Resources</a></li> -->
+        </ul>
+    </nav>
+    {% if page.url == '/' or page.url == '/index.html' %}
+    <div class="banner-container">
+        <img alt="Treaty Education banner" class="banner-img" src="{{ site.baseurl }}/assets/images/banner.jpg">
+    </div>
+    {% endif %}
+</div>
