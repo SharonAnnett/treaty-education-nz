@@ -1,11 +1,38 @@
-# Treaty Education - Website / Repository
-# Developer: Jericho Crosby (built for Sharon Annett)
-# Copyright (c) 2026 Sharon Annett (Treaty Education). All rights reserved.
-# This repository and its contents are proprietary to Sharon Annett (Treaty Education).
-# Use, copying, modification, distribution, or derivation without permission is strictly prohibited.
+# =============================================================================
+# Treaty Education - Website Configuration
+# Copyright:   (c) 2026 Sharon Annett (Treaty Education). All rights reserved.
+# Developer:   Jericho Crosby (built for Sharon Annett)
+# License:     Proprietary  - Use, copying, modification, distribution,
+#              or derivation without permission is strictly prohibited.
+# =============================================================================
 
+# ---------------------------
+# Site Information
+# ---------------------------
 title: Treaty Education
-description: Treaty Education - Sharon Annett
-baseurl: ""
-url: "https://treatyeducation.co.nz"
-incremental: true
+description: >
+  Treaty education workshops by Sharon Annett - understanding Te Tiriti o Waitangi
+  in today's Aotearoa. Personal, professional, and community transformation.
+
+# ---------------------------
+# URL Configuration
+# ---------------------------
+baseurl: ""                          # Leave empty for root domain deployment
+url: "https://treatyeducation.co.nz" # Production domain (GitHub Pages custom domain)
+
+# ---------------------------
+# Build Settings
+# ---------------------------
+incremental: true                    # Faster rebuilds during development (only changed files)
+
+# ---------------------------
+# Plugins
+# ---------------------------
+plugins:
+  - jekyll-sitemap    # Generates sitemap.xml for search engines
+  - jekyll-seo-tag    # Adds SEO & Open Graph meta tags for social sharing
+
+# ---------------------------
+# Social Sharing (Open Graph / Social Cards)
+# ---------------------------
+image: /assets/images/round-logo.png
