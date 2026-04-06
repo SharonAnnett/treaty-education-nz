@@ -17,7 +17,7 @@ description: >
 # ---------------------------
 # URL Configuration
 # ---------------------------
-baseurl: ""                          # Leave empty for root domain deployment
+baseurl: ""                          # Blank for root domain deployment
 url: "https://treatyeducation.co.nz" # Production domain (GitHub Pages custom domain)
 
 # ---------------------------

@@ -103,15 +103,17 @@ a:hover {
     left: 0;
     width: 100%;
     height: 6px;
-    background: repeating-linear-gradient(90deg,
-    var(--maori-red) 0px,
-    var(--maori-red) 10px,
-    transparent 10px,
-    transparent 20px,
-    var(--primary) 20px,
-    var(--primary) 30px,
-    transparent 30px,
-    transparent 40px);
+    background: repeating-linear-gradient(
+            90deg,
+            var(--maori-red) 0px,
+            var(--maori-red) 10px,
+            transparent 10px,
+            transparent 20px,
+            var(--primary) 20px,
+            var(--primary) 30px,
+            transparent 30px,
+            transparent 40px
+    );
     opacity: 0.5;
     pointer-events: none;
 }
