@@ -13,6 +13,8 @@ title: Treaty Education
 description: >
   Treaty education workshops by Sharon Annett - understanding Te Tiriti o Waitangi
   in today's Aotearoa. Personal, professional, and community transformation.
+lang: en
+author: Sharon Annett
 
 # ---------------------------
 # URL Configuration
@@ -35,4 +37,24 @@ plugins:
 # ---------------------------
 # Social Sharing (Open Graph / Social Cards)
 # ---------------------------
-image: /assets/images/round-logo.png
+logo: /assets/images/round-logo.png
+image: /assets/images/small-banner.png      # Default social preview image
+twitter:
+  card: summary_large_image                 # Use large image card on Twitter/X
+
+# Apply default front matter to all pages so jekyll-seo-tag always has an image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/small-banner.png
+
+# ---------------------------
+# Exclude from build
+# ---------------------------
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - run.bat

@@ -12,25 +12,46 @@
         <h1>TREATY EDUCATION</h1>
     </div>
     <div class="nav-toggle">
-        <button aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        <button aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
     </div>
-    <nav aria-label="Main navigation" class="main-nav">
+    <nav aria-label="Main navigation" class="main-nav" id="main-nav">
         <ul>
-            <li><a class="nav-link {% if page.url == '/' or page.url == '/' %}active{% endif %}"
-                    href="{{ site.baseurl }}/">About Treaty Education</a></li>
-            <li><a class="nav-link {% if page.url == '/pages/workshops' %}active{% endif %}"
-                    href="{{ site.baseurl }}/pages/workshops">Workshops</a></li>
-            <li><a class="nav-link {% if page.url == '/pages/testimonials' %}active{% endif %}"
-                    href="{{ site.baseurl }}/pages/testimonials">Testimonials</a>
+            <li>
+                <a class="nav-link {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}"
+                   href="{{ site.baseurl }}/"
+                   {% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}>
+                    About Treaty Education
+                </a>
             </li>
-            <!-- <li><a href="{{ site.baseurl }}/pages/resources" class="nav-link">Resources</a></li> -->
-            <li><a class="nav-link {% if page.url == '/pages/contact' %}active{% endif %}"
-                    href="{{ site.baseurl }}/pages/contact">Contact</a></li>
+            <li>
+                <a class="nav-link {% if page.url == '/pages/workshops.html' %}active{% endif %}"
+                   href="{{ site.baseurl }}/pages/workshops.html"
+                   {% if page.url == '/pages/workshops.html' %}aria-current="page"{% endif %}>
+                    Workshops
+                </a>
+            </li>
+            <li>
+                <a class="nav-link {% if page.url == '/pages/testimonials.html' %}active{% endif %}"
+                   href="{{ site.baseurl }}/pages/testimonials.html"
+                   {% if page.url == '/pages/testimonials.html' %}aria-current="page"{% endif %}>
+                    Testimonials
+                </a>
+            </li>
+            <!-- <li><a href="{{ site.baseurl }}/pages/resources.html" class="nav-link">Resources</a></li> -->
+            <li>
+                <a class="nav-link {% if page.url == '/pages/contact.html' %}active{% endif %}"
+                   href="{{ site.baseurl }}/pages/contact.html"
+                   {% if page.url == '/pages/contact.html' %}aria-current="page"{% endif %}>
+                    Contact
+                </a>
+            </li>
         </ul>
     </nav>
     {% if page.url == '/' or page.url == '/index.html' %}
     <div class="banner-container">
-        <img alt="Treaty Education banner" class="banner-img" src="{{ site.baseurl }}/assets/images/banner.jpg">
+        <img alt="Treaty Education banner" class="banner-img" src="{{ site.baseurl }}/assets/images/banner.jpg" loading="lazy">
     </div>
     {% endif %}
 </div>
