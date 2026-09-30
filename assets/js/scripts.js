@@ -31,6 +31,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 navToggle.focus();
             }
         });
+
+        document.addEventListener('click', function (e) {
+            if (!mainNav.classList.contains('show')) {
+                return;
+            }
+            if (e.target.closest('.main-nav')) {
+                return;
+            }
+            if (e.target.closest('.nav-toggle')) {
+                return;
+            }
+            mainNav.classList.remove('show');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
     }
 
     const scrollBtn = document.createElement('button');
